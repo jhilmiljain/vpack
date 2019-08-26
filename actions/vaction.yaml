@@ -1,12 +1,13 @@
 ---
-name: "vaction"
+name: vaction2
+pack: vpack123
 runner_type: "python-script"
-description: "Print message to standard output."
+description: Print message to standard output.
 enabled: true
-entry_point: "vaction.py"
+entry_point: vaction.py
 parameters:
     url:
-        type: "string"
-        description: "URL status"
+        type: string
+        description: URL status
         required: true
         position: 0
