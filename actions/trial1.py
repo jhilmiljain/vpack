@@ -8,12 +8,10 @@ class MyAction(Action):
       
       def run(self,id):
             try:
-                  x={"ID":id}
-                  y1=json.dumps(x)
-                  url='https://fakerestapi.azurewebsites.net/api/books'
+                  id1=str(id)
+                  url='https://fakerestapi.azurewebsites.net/api/books/'+id1
                   headers={'content-type':'application/json'}
-                  response=requests.get(url,headers=headers,data=y1)
-                  print(response)
+                  response=requests.get(url,headers=headers)
                   y2=response.json()
                   print(y2)
             except:
