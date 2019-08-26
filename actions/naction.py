@@ -8,13 +8,13 @@ class MyAction(Action):
         def run(self,id,title,description,page_count,excerpt,publish_date):
                 try:
               		x={"ID": id,"Title": title,"Description": description,"PageCount": page_count,"Excerpt": excerpt,"PublishDate": publish_date}
-                	y=json.dumps(x)
-			headers={'content-type': 'application/json'}
+                	y1=json.dumps(x)
+			header_data={'content-type': 'application/json'}
 			url='https://fakerestapi.azurewebsites.net/api/Books'
-			res=requests.post(url,headers=headers,data=y)
-			print(res)
-			z=res.json()
-			print(z)
+			res=requests.post(url,headers=header_data,data=y1)
+			print(response)
+			y2=response.json()
+			print(y2)
 			
 
 	        except:
