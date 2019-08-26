@@ -21,7 +21,7 @@ parameters:
         description: enter book_description 
         required: true
         position: 2
-     pagecount:
+     page_count:
         type: integer
         description: enter book_page_count 
         required: true
