@@ -1,6 +1,6 @@
 ---
-name: naction
-pack: vpack
+name: naction1
+pack: vpack123
 runner_type: "python-script"
 description: action to post Book data 
 enabled: true
