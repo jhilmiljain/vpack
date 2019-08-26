@@ -3,7 +3,7 @@ name: "vaction"
 runner_type: "python-script"
 description: "Print message to standard output."
 enabled: true
-entry_point: "demo4.py"
+entry_point: "vaction.py"
 parameters:
     url:
         type: "string"
