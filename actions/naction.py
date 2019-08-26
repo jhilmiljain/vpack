@@ -2,10 +2,10 @@ import sys
 import json	
 import requests	
 
- from st2common.runners.base_action import Action	
+from st2common.runners.base_action import Action	
 
 
- class MyVAction(Action):	
+class MyVAction(Action):	
          def run(self,id,title,description,page_count,excerpt,publish_date)	
                try:	
                      x={"ID":id,"Title":title,"Description":description,	
@@ -19,7 +19,7 @@ import requests
                      y2=response.json()	
                      print(y2)	
 
-                except:requests.exceptions.MissingSchema:	
+               except: requests.exceptions.MissingSchema:	
                       print("wrong URL")	
                       sys.exit(0)	
 
