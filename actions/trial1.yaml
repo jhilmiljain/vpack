@@ -1,0 +1,12 @@
+name: trial12
+pack: vpack123
+runner_type: "python-script"
+description: action to post Book data 
+enabled: true
+entry_point: trial1.py
+parameters:
+     id:
+        type: integer
+        description: enter book_id  
+        required: true
+        position: 0
