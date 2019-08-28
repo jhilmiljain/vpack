@@ -2,7 +2,7 @@
 name: vm1_stop
 pack: vpack123
 runner_type: "python-script"
-description: action to post Book data 
+description: stop vm 
 enabled: true
 entry_point: vm1_stop.py
 parameters:
